@@ -1,0 +1,116 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1681296240266-dc5f2507832c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1752&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px); 
+  /* backdrop-filter: brightness(50%); */
+  /* backdrop-filter: contrast(200%); */
+  /* backdrop-filter: grayscale(100%); */
+  /* backdrop-filter: sepia(100%); */
+  /* backdrop-filter: hue-rotate(90deg); */
+  /* backdrop-filter: invert(100%); */
+  /* backdrop-filter: saturate(1000%); */
+  backdrop-filter: blur(1px) brightness(100%) contrast(200%) invert(80%);
+}
+
+.scroll-filters-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  justify-content: center;
+}
+
+.scroll-filters {
+  padding: 40px 40px 200px;
+  overflow: scroll;
+  width: 400px;
+}
+
+.filter {
+  border: 4px solid #fff;
+  border-radius: 24px;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  color: #fff;
+  margin: 16px;
+}
+
+.filter--blur {
+  backdrop-filter: blur(2px);
+}
+
+.filter--brightness {
+  backdrop-filter: brightness(50%);
+}
+
+.filter--contrast {
+  backdrop-filter: contrast(200%);
+}
+
+.filter--grayscale {
+  backdrop-filter: grayscale(100%);
+}
+
+.filter--sepia {
+  backdrop-filter: sepia(100%);
+}
+
+.filter--hue-rotate {
+  backdrop-filter: hue-rotate(90deg);
+}
+
+.filter--invert {
+  backdrop-filter: invert(100%);
+}
+
+.filter--saturate {
+  backdrop-filter: saturate(1000%);
+}
+
+.filter--opacity {
+  backdrop-filter: opacity(50%);
+}
+
+.filter--multi {
+  backdrop-filter: blur(1px) brightness(100%) contrast(200%) invert(80%);
+}
